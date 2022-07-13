@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Contract</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+        <script src="../index.js"></script>
+        <script src="../abi.js"></script>
+        <link rel="stylesheet" href="../style.css"></link>
+    
+    
+</head>
+<body>
+
+    
+    <div>
+        <p style = "font-family: -apple-system, system-ui, Segoe UI, Liberation Sans, sans-serif; 
+        font-size: 13px; color: darkslategray;">
+            Deploy the Contract with two Metamask account (let say Father & Son) to communicate.
+        </p>
+        <input id="address1" style="width:280px; font-size: 12px;" placeholder="Address1..."><br>
+        <input id="address2" style="width:280px; font-size: 12px;" placeholder="Address2..."><br>
+        <button class="button-8" onclick="deployContract()">Deploy</button><br>
+        <div class="text" id="deployStatus"></div>
+    </div>
+
+</body>
+</html>

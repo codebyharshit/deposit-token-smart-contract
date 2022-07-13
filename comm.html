@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-content="IE=Edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+	<title>Pixeltest-JBworks</title>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+	<script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" 
+				type="application/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../index.js"></script>
+    <script src="../abi.js"></script>
+    <link rel="stylesheet" href="../style.css"></link>
+</head>
+
+<body>
+
+    <input id="cAdres" type="text" oninput="balance()" style="width:280px; font-size: 12px;" placeholder="paste Contract address"></input><br>
+
+    <div class="text" id="contractBalance"></div><br>
+    
+    <input id="amount" type="text" style="width:200px; font-size: 12px;" placeholder="Amount in ether"></input><br>
+
+    <button class="button-8" role="button" id="deposit" style="width:140px;" onclick = "deposit()">Deposit</button>
+    
+    <button class="button-8" role="button" id="allowance" style="width:140px;" onclick = "allowance()">Approve Allowance</button>
+    
+    <button class="button-8" role="button" id="withdraw" style="width:140px;" onclick = "withdraw()">Withdraw</button>
+    
+    <button class="button-8" role="button" id="getbalance" style="width:140px;" onclick = "balance()">Get Balances</button>
+    
+    <div class="text" id="txStatus"></div>
+    
+    <div class="text" id="fatherBalance"></div>
+    
+    <div class="text" id="sonBalance"></div>
+
+    <div class="text" id="allowLimit"></div>
+
+</body>
+</html>
